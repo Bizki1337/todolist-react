@@ -29,7 +29,6 @@ class App extends Component {
   addItem = e => {
     e.preventDefault()
     const newItem = this.state.currentItem
-    const keyItem = this.state.currentItem.key
     console.log(newItem)
     if (newItem !== "") {
       const newItems = [...this.state.items, newItem]
