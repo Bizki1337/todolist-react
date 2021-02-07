@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Componentz = props => {
+const List = props => {
 
     const items = props.items
 
@@ -9,6 +9,8 @@ const Componentz = props => {
         <div key={item.key}>
             <p>
                 {item.text}
+                <br />
+                {item.time}
             </p>
             <button
                 onClick={() => props.deleteItem(item.key)}
@@ -26,4 +28,4 @@ const Componentz = props => {
 
 }
 
-export default Componentz
+export default List
